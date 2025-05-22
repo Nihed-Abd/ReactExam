@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Migration Cloud",
+      "status": "en cours",
+      "priority": "haute",
+      "deadline": "2025-06-01"
+    },
+    {
+      "id": "2",
+      "name": "Refonte UI",
+      "status": "terminé",
+      "priority": "moyenne",
+      "deadline": "2024-12-15"
+    },
+    {
+      "id": "3",
+      "name": "Sécurité API",
+      "status": "en retard",
+      "priority": "haute",
+      "deadline": "2025-01-10"
+    },
+    {
+      "id": "4",
+      "name": "Documentation",
+      "status": "archivé",
+      "priority": "basse",
+      "deadline": "2024-11-30"
+    },
+    {
+      "id": "2c20",
+      "name": "Test",
+      "status": "en cours",
+      "priority": "moyenne",
+      "deadline": "2002-01-11"
+    }
+  ]
+}
