@@ -44,8 +44,6 @@ function Dashboard() {
       
       // Projects created this month
       const projectsThisMonth = projects.filter(p => {
-        // Note: This is a simplification as we don't have a creation date in our data model
-        // In a real app, you would check the creation date instead
         const deadline = new Date(p.deadline);
         return deadline.getMonth() === currentMonth && deadline.getFullYear() === currentYear;
       }).length;

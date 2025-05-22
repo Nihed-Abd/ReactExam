@@ -55,7 +55,6 @@ function ProjectDetails() {
     // Update every minute
     const intervalId = setInterval(calculateTimeRemaining, 60000);
 
-    // Clean up interval on component unmount
     return () => clearInterval(intervalId);
   }, [project]);
 
@@ -64,11 +63,9 @@ function ProjectDetails() {
   };
 
   const handleDelete = async () => {
-    // Show confirmation alert
     if (window.confirm('Êtes-vous sûr de vouloir supprimer ce projet?')) {
       try {
         await axios.delete(`http://localhost:3000/projects/${id}`);
-        // Redirect to projects page after successful deletion
         navigate('/projects');
       } catch (err) {
         alert('Erreur lors de la suppression du projet');
